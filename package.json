@@ -1,0 +1,31 @@
+{
+  "name": "electron-scripts",
+  "version": "1.0.0",
+  "description": "Configuration and scripts for create electron app.",
+  "main": "bin\\electron-scripts.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mesamo/electron-scripts.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Mesamo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mesamo/electron-scripts/issues"
+  },
+  "homepage": "https://github.com/Mesamo/electron-scripts#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "cross-spawn": "^6.0.5",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.3.1",
+    "yargs": "^13.2.2"
+  }
+}
