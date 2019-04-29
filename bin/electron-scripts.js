@@ -27,9 +27,8 @@ switch (script) {
       { stdio: 'inherit' }
     );
     process.exit(result.status);
-    break;
   }
   default:
-    console.log(`Unknown script "${script}".`)
+    console.log(`Unknown script "${script}".`);
     break;
 }

@@ -4,7 +4,8 @@
   "description": "Configuration and scripts for create electron app.",
   "main": "bin\\electron-scripts.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "eslint scripts lib"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,13 @@
     "figlet": "^1.2.1",
     "inquirer": "^6.3.1",
     "yargs": "^13.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }
