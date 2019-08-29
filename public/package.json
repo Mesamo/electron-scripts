@@ -1,5 +1,9 @@
 {
   "name": "electron-app",
+  "description": "My Electron App",
   "version": "1.0.0",
-  "main": "bundle.js"
+  "author": {
+    "name": "gsafety"
+  },
+  "main": "out/main.js"
 }
