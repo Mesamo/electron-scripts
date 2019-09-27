@@ -1,0 +1,6 @@
+{
+  "$schema": "./lib/configs/schema.json",
+  "download": {
+    "mirror": "https://npm.taobao.org/mirrors/electron/"
+  }
+}

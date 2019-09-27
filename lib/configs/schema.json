@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Electron-Scripts Configuration",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "download": {
+      "$ref": "#/definitions/downloadOptions"
+    }
+  },
+  "definitions": {
+    "downloadOptions": {
+      "type": "object",
+      "description": "Electron Download Options",
+      "properties": {
+        "mirror": {
+          "type":"string",
+          "description": "Electron Download Mirror Url"
+        }
+      }
+    }
+  }
+}
