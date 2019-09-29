@@ -2,8 +2,8 @@
   "name": "my-app",
   "description": "My Electron App",
   "version": "1.0.0",
+  "main": "main/main.js",
   "author": {
     "name": "gsafety"
-  },
-  "main": "main/main.js"
+  }
 }
