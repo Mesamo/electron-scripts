@@ -2,6 +2,11 @@
   "name": "my-app",
   "description": "My Electron App",
   "version": "1.0.0",
+  "scripts": {
+    "start": "electron-scripts start",
+    "build": "electron-scripts build",
+    "test": "electron-scripts test"
+  },
   "main": "main/main.js",
   "author": {
     "name": "gsafety"
