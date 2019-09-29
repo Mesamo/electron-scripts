@@ -1,5 +1,14 @@
 {
   "$schema": "./lib/configs/schema.json",
+  "compilation": {
+    "mainProcess": {
+      "main": "template/main.ts",
+      "tsConfig": "tsconfig.app.json"
+    },
+    "rendererProcess": {
+      "dir": "renderer"
+    }
+  },
   "download": {
     "mirror": "https://npm.taobao.org/mirrors/electron/"
   }

@@ -8,6 +8,9 @@
     },
     "download": {
       "$ref": "#/definitions/downloadOptions"
+    },
+    "compilation": {
+      "$ref": "#/definitions/compilationOptions"
     }
   },
   "definitions": {
@@ -16,8 +19,52 @@
       "description": "Electron Download Options",
       "properties": {
         "mirror": {
-          "type":"string",
+          "type": "string",
           "description": "Electron Download Mirror Url"
+        }
+      }
+    },
+    "compilationOptions": {
+      "type": "object",
+      "description": "编译配置",
+      "properties": {
+        "mainProcess": {
+          "$ref": "#/definitions/mainProcessOptions"
+        },
+        "rendererProcess": {
+          "$ref": "#/definitions/rendererProcessOptions"
+        }
+      }
+    },
+    "mainProcessOptions": {
+      "type": "object",
+      "description": "主线程编译配置",
+      "properties": {
+        "main": {
+          "type": "string",
+          "description": "入口文件路径"
+        },
+        "tsConfig": {
+          "type": "string",
+          "description": "tsconfig配置文件路径"
+        }
+      }
+    },
+    "rendererProcessOptions": {
+      "type": "object",
+      "description": "渲染程编编译配置",
+      "properties": {
+        "dir": {
+          "type": "string",
+          "description": "渲染线程目录(复制整个目录到编译目录)"
+        },
+        "index": {
+          "type": "string",
+          "description": "index.html路径，相对于`dir`配置目录"
+        },
+        "exclude": {
+          "type": "array",
+          "description": "忽略文件"
         }
       }
     }

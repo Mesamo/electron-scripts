@@ -5,5 +5,5 @@
   "author": {
     "name": "gsafety"
   },
-  "main": "out/main.js"
+  "main": "main/main.js"
 }
