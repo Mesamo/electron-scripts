@@ -28,6 +28,9 @@
       "type": "object",
       "description": "编译配置",
       "properties": {
+        "asar": {
+          "$ref": "#/definitions/asarOptions"
+        },
         "mainProcess": {
           "$ref": "#/definitions/mainProcessOptions"
         },
@@ -35,6 +38,28 @@
           "$ref": "#/definitions/rendererProcessOptions"
         }
       }
+    },
+    "asarOptions": {
+      "oneOf": [
+        {
+          "type": "boolean",
+          "description": "是否将压缩成asar"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "unpack": {
+              "type": "string",
+              "description": "不压缩的文件"
+            },
+            "unpackDir": {
+              "type": "string",
+              "description": "不压缩的目录"
+            }
+          }
+        }
+      ],
+      "description": "Asar配置"
     },
     "mainProcessOptions": {
       "type": "object",

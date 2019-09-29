@@ -1,6 +1,9 @@
 {
   "$schema": "./lib/configs/schema.json",
   "compilation": {
+    "asar": {
+      "unpack": "**/*/*config.json"
+    },
     "mainProcess": {
       "main": "template/main.ts",
       "tsConfig": "tsconfig.app.json"
