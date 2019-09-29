@@ -6,7 +6,12 @@
       "tsConfig": "tsconfig.app.json"
     },
     "rendererProcess": {
-      "dir": "renderer"
+      "projects": [
+        {
+          "input": "renderer",
+          "output": "."
+        }
+      ]
     }
   },
   "download": {

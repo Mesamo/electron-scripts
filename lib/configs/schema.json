@@ -54,19 +54,46 @@
       "type": "object",
       "description": "渲染程编编译配置",
       "properties": {
-        "dir": {
-          "type": "string",
-          "description": "渲染线程目录(复制整个目录到编译目录)"
-        },
-        "index": {
-          "type": "string",
-          "description": "index.html路径，相对于`dir`配置目录"
+        "projects": {
+          "type": "array",
+          "description": "渲染线程目录(复制整个目录到编译目录)",
+          "items": {
+            "$ref": "#/definitions/projectPattern"
+          }
         },
         "exclude": {
           "type": "array",
-          "description": "忽略文件"
+          "description": "忽略文件",
+          "items": {
+            "type": "string"
+          }
         }
       }
+    },
+    "projectPattern": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "渲染线程目录"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": "string",
+              "description": "输入目录"
+            },
+            "output": {
+              "type": "string",
+              "description": "输出目录"
+            }
+          },
+          "required": [
+            "input",
+            "output"
+          ]
+        }
+      ]
     }
   }
 }
