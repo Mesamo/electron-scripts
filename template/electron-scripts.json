@@ -1,19 +1,19 @@
 {
-  "$schema": "./lib/configs/schema.json",
+  "$schema": "node_modules/@mesamo/electron-scripts/lib/configs/schema.json",
   "compilation": {
-    "pkgJson": "template/package.json",
-    "icon": "template/assets/icon.ico",
+    "pkgJson": "package.json",
+    "icon": "assets/app-icon.ico",
     "asar": {
       "unpack": "**/*/*config.json"
     },
     "mainProcess": {
-      "main": "template/src/main.ts",
-      "tsConfig": "template/tsconfig.app.json"
+      "main": "src/main.ts",
+      "tsConfig": "tsconfig.app.json"
     },
     "rendererProcess": {
       "projects": [
         {
-          "input": "template/renderer",
+          "input": "renderer",
           "output": "."
         }
       ]

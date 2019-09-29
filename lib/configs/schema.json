@@ -28,8 +28,19 @@
       "type": "object",
       "description": "编译配置",
       "properties": {
+        "pkgJson": {
+          "type": "string",
+          "description": "package.json文件路径",
+          "default": "package.json"
+        },
+        "icon": {
+          "type": "string",
+          "description": "App图表",
+          "default": "assets/app-icon.ico"
+        },
         "asar": {
-          "$ref": "#/definitions/asarOptions"
+          "$ref": "#/definitions/asarOptions",
+          "default": false
         },
         "mainProcess": {
           "$ref": "#/definitions/mainProcessOptions"

@@ -10,7 +10,6 @@ build();
 async function build() {
   try {
     await printLogo();
-    // console.log('Starting build task... ');
     await copyPublicFolder();
     await compileTs();
     await electronPackage();
