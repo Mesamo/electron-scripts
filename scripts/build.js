@@ -14,7 +14,6 @@ async function build() {
     await compileTs();
     await electronPackage();
   } catch (error) {
-    console.log('\n');
     console.log(chalk.red(error.message));
     process.exit(1);
   }

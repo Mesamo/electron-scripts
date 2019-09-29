@@ -83,6 +83,10 @@
         "tsConfig": {
           "type": "string",
           "description": "tsconfig配置文件路径"
+        },
+        "tslint": {
+          "type": "string",
+          "description": "tslint.json配置文件路径"
         }
       }
     },

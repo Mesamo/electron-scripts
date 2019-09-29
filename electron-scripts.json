@@ -8,7 +8,8 @@
     },
     "mainProcess": {
       "main": "template/src/main.ts",
-      "tsConfig": "template/tsconfig.app.json"
+      "tsConfig": "template/tsconfig.app.json",
+      "tslint": "template/tslint.json"
     },
     "rendererProcess": {
       "projects": [
