@@ -42,6 +42,9 @@
           "$ref": "#/definitions/asarOptions",
           "default": false
         },
+        "product": {
+          "$ref": "#/definitions/productOptions"
+        },
         "mainProcess": {
           "$ref": "#/definitions/mainProcessOptions"
         },
@@ -71,6 +74,40 @@
         }
       ],
       "description": "Asar配置"
+    },
+    "productOptions": {
+      "type": "object",
+      "description": "产品配置",
+      "properties": {
+        "appId": {
+          "type": "string",
+          "description": "应用程序唯一标识"
+        },
+        "name": {
+          "type": "string",
+          "description": "名称"
+        },
+        "version": {
+          "type": "string",
+          "description": "版本号"
+        },
+        "dirName": {
+          "type": "string",
+          "description": "安装目录名称"
+        },
+        "publisher": {
+          "type": "string",
+          "description": "发布者"
+        },
+        "copyright": {
+          "type": "string",
+          "description": "版权"
+        },
+        "arch": {
+          "$ref": "#/definitions/archPattern",
+          "description": "架构"
+        }
+      }
     },
     "mainProcessOptions": {
       "type": "object",
@@ -133,6 +170,13 @@
             "output"
           ]
         }
+      ]
+    },
+    "archPattern": {
+      "type": "string",
+      "enum": [
+        "x64",
+        "ia32"
       ]
     }
   }

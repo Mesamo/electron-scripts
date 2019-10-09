@@ -6,6 +6,15 @@
     "asar": {
       "unpack": "**/*/*config.json"
     },
+    "product": {
+      "appId": "{{DCF4678E-5487-4E63-B26F-8989175211F5}",
+      "name": "MyApp",
+      "version": "1.0.0",
+      "dirName": "My App",
+      "publisher": "Mesamo",
+      "copyright": "Copyright © 1997-2005 Gsafety, Inc",
+      "arch": "x64"
+    },
     "mainProcess": {
       "main": "template/src/main.ts",
       "tsConfig": "template/tsconfig.app.json",
