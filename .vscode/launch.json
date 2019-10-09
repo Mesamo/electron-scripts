@@ -9,6 +9,19 @@
       "request": "launch",
       "name": "Debug Build Scripts",
       "program": "${workspaceFolder}\\scripts\\build.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Electron",
+      "preLaunchTask": "start",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd",
+      "outFiles": [
+          "${workspaceFolder}/build/resources/main/**/*.js"
+      ],
+      "args" : ["${workspaceFolder}/build/resources"],
+      "sourceMaps": true,
+      "outputCapture": "std"
     }
   ]
 }

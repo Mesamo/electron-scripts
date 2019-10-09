@@ -6,10 +6,21 @@
     "version": "electron-scripts version",
     "start": "electron-scripts start",
     "build": "electron-scripts build",
-    "test": "electron-scripts test"
+    "test": "electron-scripts test",
+    "launch": "electron build/resources"
   },
   "main": "main/main.js",
   "author": {
     "name": "gsafety"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
   }
 }

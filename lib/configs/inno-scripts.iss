@@ -27,6 +27,9 @@ Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 Name: "simplifiedChinese"; MessagesFile: "{#InnoSetupPath}\i18n\Default.zh-cn.isl"
 
+[UninstallDelete]
+Type: filesandordirs; Name: "{app}\_"
+
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 

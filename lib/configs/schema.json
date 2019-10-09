@@ -117,6 +117,10 @@
           "type": "string",
           "description": "入口文件路径"
         },
+        "preload": {
+          "type": "string",
+          "description": "Electron BrowserWindow预加载入口文件"
+        },
         "tsConfig": {
           "type": "string",
           "description": "tsconfig配置文件路径"

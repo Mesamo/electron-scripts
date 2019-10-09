@@ -17,6 +17,7 @@
     },
     "mainProcess": {
       "main": "template/src/main.ts",
+      "preload": "template/src/preload/preload.ts",
       "tsConfig": "template/tsconfig.app.json",
       "tslint": "template/tslint.json"
     },

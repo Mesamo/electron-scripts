@@ -5,7 +5,8 @@
   "bin": "./bin/electron-scripts.js",
   "scripts": {
     "lint": "eslint scripts lib",
-    "start": "node ./bin/electron-scripts.js"
+    "start": "node ./bin/electron-scripts.js start",
+    "build": "node ./bin/electron-scripts.js build"
   },
   "repository": {
     "type": "git",

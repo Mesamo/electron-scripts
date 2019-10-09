@@ -6,10 +6,16 @@
   </head>
   <body>
     <h1>Hello World!</h1>
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    We are using Node.js <script>document.write(nodeProcess.versions.node)</script>,
+    Chromium <script>document.write(nodeProcess.versions.chrome)</script>,
+    and Electron <script>document.write(nodeProcess.versions.electron)</script>.
 
     <!-- You can also require other files to run in this process -->
   </body>
+  <script>
+    setTimeout(() => {
+      const returnValue = window.ipcRenderer.send('renderer-ready', 'AppWindow');
+      log.info('test log message in renderer');
+    }, 1000)
+  </script>
 </html>
