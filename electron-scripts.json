@@ -1,7 +1,6 @@
 {
   "$schema": "./lib/configs/schema.json",
   "compilation": {
-    "pkgJson": "template/package.json",
     "icon": "template/assets/icon.ico",
     "asar": {
       "unpack": "**/*/*config.json"
@@ -15,6 +14,10 @@
       "copyright": "Copyright © 1997-2005 Gsafety, Inc",
       "arch": "x64"
     },
+    "assets": [
+      "template/package.json",
+      "template/src/config.json"
+    ],
     "mainProcess": {
       "main": "template/src/main.ts",
       "preload": "template/src/preload/preload.ts",

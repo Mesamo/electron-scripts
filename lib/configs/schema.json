@@ -28,14 +28,9 @@
       "type": "object",
       "description": "编译配置",
       "properties": {
-        "pkgJson": {
-          "type": "string",
-          "description": "package.json文件路径",
-          "default": "package.json"
-        },
         "icon": {
           "type": "string",
-          "description": "App图表",
+          "description": "App图标",
           "default": "assets/app-icon.ico"
         },
         "asar": {
@@ -44,6 +39,12 @@
         },
         "product": {
           "$ref": "#/definitions/productOptions"
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/assetsPattern"
+          }
         },
         "mainProcess": {
           "$ref": "#/definitions/mainProcessOptions"
@@ -182,6 +183,31 @@
         "x64",
         "ia32"
       ]
+    },
+    "assetsPattern": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": "string",
+              "description": "输入目录"
+            },
+            "output": {
+              "type": "string",
+              "description": "输出目录"
+            }
+          },
+          "required": [
+            "input",
+            "output"
+          ]
+        }
+      ],
+      "description": "资源文件或目录"
     }
   }
 }
