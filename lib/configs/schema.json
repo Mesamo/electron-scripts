@@ -129,6 +129,10 @@
         "tslint": {
           "type": "string",
           "description": "tslint.json配置文件路径"
+        },
+        "externals": {
+          "type": "object",
+          "description": "webpack externals"
         }
       }
     },
