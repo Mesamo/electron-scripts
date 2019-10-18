@@ -8,7 +8,7 @@ start();
 async function start() {
   try {
     await copyFiles();
-    await compileTs();
+    await compileTs('development');
   } catch (error) {
     console.log(chalk.red(error.message));
     process.exit(1);

@@ -42,5 +42,5 @@ Name: "{group}\{cm:UninstallProgram,{#Name}}"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\{#Name}"; Filename: "{app}\{#ExeBasename}"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\{#ExeBasename}"; Description: "{cm:LaunchProgram,{#StringChange(Name, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\{#ExeBasename}"; Description: "{cm:LaunchProgram,{#StringChange(Name, '&', '&&')}}"; Flags: nowait postinstall
 

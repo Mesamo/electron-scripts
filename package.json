@@ -1,12 +1,13 @@
 {
   "name": "@mesamo/electron-scripts",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Configuration and scripts for create electron app.",
   "bin": "./bin/electron-scripts.js",
   "scripts": {
     "lint": "eslint scripts lib",
     "start": "node ./bin/electron-scripts.js start",
-    "build": "node ./bin/electron-scripts.js build"
+    "build": "node ./bin/electron-scripts.js build",
+    "analyzer": "webpack-bundle-analyzer build/resources/main/stats.json"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,8 @@
     "tslint-loader": "^3.5.4",
     "typescript": "^3.6.3",
     "webpack": "^4.41.0",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-stats-plugin": "^0.3.0",
     "yargs": "^14.0.0"
   },
   "devDependencies": {
