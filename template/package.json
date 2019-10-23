@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "productName": "MyApp",
   "description": "My Electron App",
   "version": "1.0.0",
   "scripts": {

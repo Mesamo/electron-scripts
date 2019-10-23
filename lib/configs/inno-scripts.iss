@@ -9,7 +9,7 @@ DefaultDirName={autopf}\{#DirName}
 DisableDirPage=yes
 DefaultGroupName={#DirName}
 AllowNoIcons=yes
-PrivilegesRequired=lowest
+PrivilegesRequired={#Privileges}
 OutputDir={#OutputDir}
 OutputBaseFilename={#SetupName}
 SetupIconFile={#SetupIcon}
@@ -19,6 +19,7 @@ AlwaysShowDirOnReadyPage=yes
 Compression=lzma
 SolidCompression=yes
 AppMutex={#Name}
+ArchitecturesInstallIn64BitMode={#InstallMode}
 SetupMutex={#Name}setup
 
 [Languages]
@@ -42,5 +43,5 @@ Name: "{group}\{cm:UninstallProgram,{#Name}}"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\{#Name}"; Filename: "{app}\{#ExeBasename}"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\{#ExeBasename}"; Description: "{cm:LaunchProgram,{#StringChange(Name, '&', '&&')}}"; Flags: nowait postinstall
+Filename: "{app}\{#ExeBasename}"; Description: "{cm:LaunchProgram,{#StringChange(Name, '&', '&&')}}"; Flags: nowait postinstall runascurrentuser
 

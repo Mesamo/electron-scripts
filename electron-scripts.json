@@ -12,7 +12,8 @@
       "dirName": "My App",
       "publisher": "Mesamo",
       "copyright": "Copyright © 1997-2005 Gsafety, Inc",
-      "arch": "x64"
+      "arch": "x64",
+      "privileges": "admin"
     },
     "assets": [
       "template/package.json",

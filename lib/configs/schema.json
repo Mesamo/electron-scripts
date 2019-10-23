@@ -107,6 +107,11 @@
         "arch": {
           "$ref": "#/definitions/archPattern",
           "description": "架构"
+        },
+        "privileges": {
+          "type": "string",
+          "enum": ["admin", "lowest"],
+          "description": "安装包权限"
         }
       }
     },
@@ -174,19 +179,13 @@
               "description": "输出目录"
             }
           },
-          "required": [
-            "input",
-            "output"
-          ]
+          "required": ["input", "output"]
         }
       ]
     },
     "archPattern": {
       "type": "string",
-      "enum": [
-        "x64",
-        "ia32"
-      ]
+      "enum": ["x64", "ia32"]
     },
     "assetsPattern": {
       "oneOf": [
@@ -205,10 +204,7 @@
               "description": "输出目录"
             }
           },
-          "required": [
-            "input",
-            "output"
-          ]
+          "required": ["input", "output"]
         }
       ],
       "description": "资源文件或目录"
