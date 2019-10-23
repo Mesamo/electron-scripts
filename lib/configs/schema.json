@@ -84,14 +84,6 @@
           "type": "string",
           "description": "应用程序唯一标识"
         },
-        "name": {
-          "type": "string",
-          "description": "名称"
-        },
-        "version": {
-          "type": "string",
-          "description": "版本号"
-        },
         "dirName": {
           "type": "string",
           "description": "安装目录名称"

@@ -1,5 +1,6 @@
 {
   "name": "@mesamo/electron-scripts",
+  "productName": "MyApp",
   "version": "0.1.0",
   "description": "Configuration and scripts for create electron app.",
   "bin": "./bin/electron-scripts.js",
