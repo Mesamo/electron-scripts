@@ -1,11 +1,11 @@
-name: Node CI
+name: Windows Build
 
 on: [push]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     strategy:
       matrix:
@@ -20,7 +20,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm ci
-        npm start
+        npm run build
         npm test
       env:
         CI: 'true'
