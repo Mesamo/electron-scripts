@@ -5,6 +5,8 @@
     "asar": {
       "unpack": "**/*/*config.json"
     },
+    "pfxFile": "cert/mesamo.pfx",
+    "pfxPwd": "123456",
     "product": {
       "appId": "{{DCF4678E-5487-4E63-B26F-8989175211F5}",
       "dirName": "My App",

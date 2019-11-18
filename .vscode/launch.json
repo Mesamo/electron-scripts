@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug Build Scripts",
-      "program": "${workspaceFolder}\\scripts\\start.js"
+      "program": "${workspaceFolder}\\scripts\\build.js"
     },
     {
       "type": "node",

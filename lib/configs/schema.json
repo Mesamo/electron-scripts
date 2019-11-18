@@ -37,6 +37,14 @@
           "$ref": "#/definitions/asarOptions",
           "default": false
         },
+        "pfxFile": {
+          "type": "string",
+          "description": "pfx证书文件路径"
+        },
+        "pfxPwd": {
+          "type": "string",
+          "description": "pfx证书密码"
+        },
         "product": {
           "$ref": "#/definitions/productOptions"
         },
