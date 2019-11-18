@@ -8,6 +8,7 @@
     "lint": "eslint scripts lib",
     "start": "node ./bin/electron-scripts.js start",
     "build": "node ./bin/electron-scripts.js build",
+    "test": "echo \"Error: no test specified\"",
     "analyzer": "webpack-bundle-analyzer build/resources/main/stats.json"
   },
   "repository": {
