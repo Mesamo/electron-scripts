@@ -39,7 +39,7 @@
         },
         "pfxFile": {
           "type": "string",
-          "description": "pfx证书文件路径"
+          "description": "pfx证书文件路径(相对于项目目录)"
         },
         "pfxPwd": {
           "type": "string",
