@@ -4,7 +4,7 @@
   "description": "My Electron App",
   "version": "0.0.2-alpha.0",
   "scripts": {
-    "version": "electron-scripts version",
+    "es": "electron-scripts",
     "start": "electron-scripts start",
     "build": "electron-scripts build",
     "test": "electron-scripts test",
