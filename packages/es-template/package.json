@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "@mesamo/es-template",
   "productName": "MyApp",
   "description": "My Electron App",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "scripts": {
     "version": "electron-scripts version",
     "start": "electron-scripts start",
