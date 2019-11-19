@@ -24,5 +24,6 @@
     "electron": "^6.0.10",
     "tslint": "^5.20.0",
     "typescript": "^3.6.3"
-  }
+  },
+  "gitHead": "4ea1c9a122e223c3d0f23de89da26e73750933de"
 }
