@@ -60,7 +60,9 @@ async function electronPackager() {
       pfxPwd: configs.compilation.pfxPwd,
       file: exePath
     };
-    await signtool(options);
+    if (options.pfxFile && options.pfxPwd) {
+      await signtool(options);
+    }
     spinner.stop();
     taskTimer.finish();
   } catch (error) {
