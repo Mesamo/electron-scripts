@@ -1,7 +1,4 @@
 .vscode
 node_modeuls
-src
-template
 build
 dist
-public

@@ -1,11 +1,12 @@
 {
   "$schema": "./node_modules/@mesamo/electron-scripts/lib/configs/schema.json",
   "compilation": {
-    "pkgJson": "package.json",
-    "icon": "assets/app-icon.ico",
+    "icon": "assets/icon.ico",
     "asar": {
       "unpack": "**/*/*config.json"
     },
+    "pfxFile": "cert/mesamo.pfx",
+    "pfxPwd": "123456",
     "product": {
       "appId": "{{DCF4678E-5487-4E63-B26F-8989175211F5}",
       "dirName": "My App",
@@ -14,6 +15,10 @@
       "arch": "x64",
       "privileges": "admin"
     },
+    "assets": [
+      "package.json",
+      "src/config.json"
+    ],
     "mainProcess": {
       "main": "src/main.ts",
       "preload": "src/preload/preload.ts",

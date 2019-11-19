@@ -12,6 +12,5 @@ module.exports = {
   appDist: resolveFromApp('dist'),
   appSrc: resolveFromApp('src'),
   appNodeModules: resolveFromApp('node_modules'),
-  config: resolveFromApp('electron-scripts.json'),
-  signtool: resolveFromApp('lib/signtool/signtool.exe')
+  config: resolveFromApp('electron-scripts.json')
 };
