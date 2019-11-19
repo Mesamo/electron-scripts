@@ -1,4 +1,5 @@
 {
+  "name": "electron-scripts",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -24,6 +25,5 @@
   "devDependencies": {
     "lerna": "^3.18.4",
     "lerna-changelog": "^0.8.3"
-  },
-  "name": "electron-scripts"
+  }
 }
