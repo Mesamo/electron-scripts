@@ -1,0 +1,14 @@
+{
+  "name": "@mesamo/windows-sign-tool",
+  "version": "0.0.1",
+  "description": "Node wrapper to digital signature files on windows.",
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mesamo/electron-scripts.git",
+    "directory": "packages/windows-sign-tool"
+  },
+  "license": "MIT",
+  "private": false
+}

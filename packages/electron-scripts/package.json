@@ -5,11 +5,15 @@
   "bin": "./bin/electron-scripts.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mesamo/electron-scripts.git"
+    "url": "git+https://github.com/Mesamo/electron-scripts.git",
+    "directory": "packages/electron-scripts"
   },
   "author": "Mesamo",
   "license": "MIT",
   "dependencies": {
+    "@mesamo/es-dev-utils": "0.0.1",
+    "@mesamo/inno-setup-compiler": "0.0.1",
+    "@mesamo/windows-sign-tool": "0.0.1",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "clui": "^0.3.6",

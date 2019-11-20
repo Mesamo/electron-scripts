@@ -7,6 +7,15 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/packages/electron-scripts/scripts/build.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Electron",
       "preLaunchTask": "start",
       "runtimeExecutable": "${workspaceFolder}/packages/es-template/node_modules/.bin/electron.cmd",

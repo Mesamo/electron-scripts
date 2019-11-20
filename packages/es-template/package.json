@@ -11,6 +11,11 @@
     "launch": "electron build/resources"
   },
   "main": "main/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mesamo/electron-scripts.git",
+    "directory": "packages/es-template"
+  },
   "author": "Mesamo",
   "license": "MIT",
   "dependencies": {

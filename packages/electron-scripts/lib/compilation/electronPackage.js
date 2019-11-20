@@ -2,13 +2,14 @@ const packager = require('electron-packager');
 const fs = require('fs-extra');
 const path = require('path');
 const clui = require('clui');
+const signTool = require('@mesamo/windows-sign-tool');
+
 const paths = require('../paths');
 const TaskTimer = require('../utils/task-timer');
 const getElectronVersion = require('../utils/getElectronVersion');
 const configs = require('../configs/scripts-config');
 const resolveFromApp = require('../utils/resolveFromApp');
 const pkg = require('../utils/resolvePkgJson');
-const signtool = require('../signtool/signtool');
 
 const Spinner = clui.Spinner;
 
@@ -61,7 +62,7 @@ async function electronPackager() {
       file: exePath
     };
     if (options.pfxFile && options.pfxPwd) {
-      await signtool(options);
+      await signTool(options);
     }
     spinner.stop();
     taskTimer.finish();

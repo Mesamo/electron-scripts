@@ -4,7 +4,7 @@ const path = require('path');
 function signFile(options, cb) {
   options = options || {};
   const { pfxFile, pfxPwd, file } = options;
-  const singTool = path.resolve(__dirname, 'signtool.exe');
+  const singTool = path.resolve(__dirname, 'lib', 'signtool.exe');
 
   const args = ['sign', '/f', pfxFile, '/p', pfxPwd, file];
   const child = spawn(singTool, args);

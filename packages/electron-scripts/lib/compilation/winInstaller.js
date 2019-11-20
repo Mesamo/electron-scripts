@@ -1,14 +1,14 @@
 const path = require('path');
 const clui = require('clui');
 const fs = require('fs-extra');
+const innoSetupCompiler = require('@mesamo/inno-setup-compiler');
+const signTool = require('@mesamo/windows-sign-tool');
 
 const paths = require('../paths');
 const TaskTimer = require('../utils/task-timer');
 const configs = require('../configs/scripts-config');
-const innoSetupCompiler = require('../innosetup/iscc');
 const resolveFromApp = require('../utils/resolveFromApp');
 const pkg = require('../utils/resolvePkgJson');
-const signtool = require('../signtool/signtool');
 
 const Spinner = clui.Spinner;
 const spinner = new Spinner('Packaging...');
@@ -72,7 +72,7 @@ async function installation() {
       file: exePath
     };
     if (options.pfxFile && options.pfxPwd) {
-      await signtool(options);
+      await signTool(options);
     }
     spinner.stop();
     taskTimer.finish();

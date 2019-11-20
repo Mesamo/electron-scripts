@@ -1,0 +1,14 @@
+{
+  "name": "@mesamo/es-dev-utils",
+  "version": "0.0.1",
+  "description": "Electron Scripts Utils",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mesamo/electron-scripts.git",
+    "directory": "packages/es-dev-utils"
+  },
+  "author": "Mesamo",
+  "license": "MIT",
+  "private": false
+}

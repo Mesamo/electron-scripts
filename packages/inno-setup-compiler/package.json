@@ -1,0 +1,15 @@
+{
+  "name": "@mesamo/inno-setup-compiler",
+  "version": "0.0.1",
+  "description": "Node wrapper to compile inno setup scripts",
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mesamo/electron-scripts.git",
+    "directory": "packages/inno-setup-compiler"
+  },
+  "author": "Mesamo",
+  "license": "MIT",
+  "private": false
+}

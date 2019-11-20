@@ -17,7 +17,7 @@ function packageInnoSetup(iss, options, cb) {
   const keys = Object.keys(definitions);
   const defs = keys.map(key => `/d${key}=${definitions[key]}`);
   const args = [iss, '/q', ...defs];
-  const innoSetupPath = path.resolve(__dirname, 'bin', 'ISCC.exe');
+  const innoSetupPath = path.resolve(__dirname, 'lib', 'ISCC.exe');
 
   const child = spawn(innoSetupPath, args);
   // child.stdout.pipe(process.stdout);
