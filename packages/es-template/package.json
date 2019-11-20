@@ -2,7 +2,7 @@
   "name": "@mesamo/es-template",
   "productName": "MyApp",
   "description": "My Electron App",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "es": "electron-scripts",
     "start": "electron-scripts start",
@@ -24,7 +24,7 @@
     "winston-daily-rotate-file": "^3.6.0"
   },
   "devDependencies": {
-    "@mesamo/electron-scripts": "^0.1.5",
+    "@mesamo/electron-scripts": "^0.1.6",
     "@types/node": "^10.12.18",
     "electron": "^6.0.10",
     "tslint": "^5.20.0",
