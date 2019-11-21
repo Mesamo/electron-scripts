@@ -1,6 +1,6 @@
 {
   "name": "@mesamo/electron-scripts",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Configuration and scripts for create electron app.",
   "bin": "./bin/electron-scripts.js",
   "repository": {
@@ -11,7 +11,7 @@
   "author": "Mesamo",
   "license": "MIT",
   "dependencies": {
-    "@mesamo/es-dev-utils": "^0.0.2",
+    "@mesamo/es-dev-utils": "^0.0.3",
     "@mesamo/inno-setup-compiler": "^0.0.3",
     "@mesamo/windows-sign-tool": "^0.0.2",
     "chalk": "^2.4.2",
