@@ -1,10 +1,10 @@
 const chalk = require('chalk');
+const formatTimeString = require('@mesamo/es-dev-utils/formatTimeString');
+const formatShortDate = require('@mesamo/es-dev-utils/formatShortDate');
+
 const gray = chalk.default.gray;
 const cyan = chalk.default.cyan;
 const magenta = chalk.default.magenta;
-
-const formatShortDate = require('./formatShortDate');
-const formatTimeString = require('./formatTimeString');
 
 class TaskTimer {
   constructor(taskName) {
@@ -35,4 +35,4 @@ class TaskTimer {
   }
 }
 
-module.exports = TaskTimer;
+module.exports = { TaskTimer };

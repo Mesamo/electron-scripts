@@ -1,11 +1,11 @@
 const path = require('path');
 const clui = require('clui');
 const fs = require('fs-extra');
+const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
 const innoSetupCompiler = require('@mesamo/inno-setup-compiler');
 const signTool = require('@mesamo/windows-sign-tool');
 
 const paths = require('../paths');
-const TaskTimer = require('../utils/task-timer');
 const configs = require('../configs/scripts-config');
 const resolveFromApp = require('../utils/resolveFromApp');
 const pkg = require('../utils/resolvePkgJson');

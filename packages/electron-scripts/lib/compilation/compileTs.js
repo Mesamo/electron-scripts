@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const clui = require('clui');
 const chalk = require('chalk');
-const TaskTimer = require('../utils/task-timer');
+const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
 const formatWebpackMessages = require('../utils/formatWebpackMessages');
 
 const Spinner = clui.Spinner;

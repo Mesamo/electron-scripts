@@ -1,8 +1,9 @@
 const fs = require('fs-extra');
 const clui = require('clui');
 const path = require('path');
+const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
+
 const paths = require('../paths');
-const TaskTimer = require('../utils/task-timer');
 const resolveFromApp = require('../utils/resolveFromApp');
 const configs = require('../configs/scripts-config');
 

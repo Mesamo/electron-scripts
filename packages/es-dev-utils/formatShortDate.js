@@ -1,4 +1,4 @@
-function formatShortDate(date1) {
+function formatShortDate() {
   const date = new Date();
   return date.toTimeString().split(' ')[0];
 }
