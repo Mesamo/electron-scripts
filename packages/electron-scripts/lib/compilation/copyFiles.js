@@ -1,13 +1,11 @@
 const fs = require('fs-extra');
-const clui = require('clui');
 const path = require('path');
 const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
+const { Spinner } = require('@mesamo/es-dev-utils/spinner');
 
 const paths = require('../paths');
 const resolveFromApp = require('../utils/resolveFromApp');
 const configs = require('../configs/scripts-config');
-
-const Spinner = clui.Spinner;
 
 const spinner = new Spinner('Copy Files...');
 const taskTimer = new TaskTimer('Copy Files');

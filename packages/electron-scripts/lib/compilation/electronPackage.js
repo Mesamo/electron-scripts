@@ -1,8 +1,8 @@
 const packager = require('electron-packager');
 const fs = require('fs-extra');
 const path = require('path');
-const clui = require('clui');
 const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
+const { Spinner } = require('@mesamo/es-dev-utils/spinner');
 const signTool = require('@mesamo/windows-sign-tool');
 
 const paths = require('../paths');
@@ -10,8 +10,6 @@ const getElectronVersion = require('../utils/getElectronVersion');
 const configs = require('../configs/scripts-config');
 const resolveFromApp = require('../utils/resolveFromApp');
 const pkg = require('../utils/resolvePkgJson');
-
-const Spinner = clui.Spinner;
 
 const spinner = new Spinner('Packaging...');
 const taskTimer = new TaskTimer('Electron Package');

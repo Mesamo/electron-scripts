@@ -1,7 +1,7 @@
 const path = require('path');
-const clui = require('clui');
 const fs = require('fs-extra');
 const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
+const { Spinner } = require('@mesamo/es-dev-utils/spinner');
 const innoSetupCompiler = require('@mesamo/inno-setup-compiler');
 const signTool = require('@mesamo/windows-sign-tool');
 
@@ -10,7 +10,6 @@ const configs = require('../configs/scripts-config');
 const resolveFromApp = require('../utils/resolveFromApp');
 const pkg = require('../utils/resolvePkgJson');
 
-const Spinner = clui.Spinner;
 const spinner = new Spinner('Packaging...');
 const taskTimer = new TaskTimer('Win32 Installer');
 

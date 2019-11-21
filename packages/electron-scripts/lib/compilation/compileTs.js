@@ -1,10 +1,9 @@
 const webpack = require('webpack');
-const clui = require('clui');
 const chalk = require('chalk');
 const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
+const { Spinner } = require('@mesamo/es-dev-utils/spinner');
 const formatWebpackMessages = require('../utils/formatWebpackMessages');
 
-const Spinner = clui.Spinner;
 const spinner = new Spinner('Compile TypeScript...');
 const taskTimer = new TaskTimer('Compile TypeScript');
 
