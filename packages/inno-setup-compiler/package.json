@@ -1,6 +1,6 @@
 {
   "name": "@mesamo/inno-setup-compiler",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node wrapper to compile inno setup scripts",
   "main": "index.js",
   "typings": "./index.d.ts",
