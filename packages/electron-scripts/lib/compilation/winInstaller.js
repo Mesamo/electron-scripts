@@ -31,7 +31,6 @@ const buildInstallMode = (arch) => {
 
 async function installation() {
   const configPath = path.resolve(__dirname, '../configs/inno-scripts.iss');
-  const innoSetupPath = path.resolve(__dirname, '..', 'innosetup');
 
   const sourcePath = buildPath(product.arch);
   const outputPath = paths.appPack;
@@ -50,7 +49,6 @@ async function installation() {
     OutputDir: outputPath,
     SetupName: setupName,
     SetupIcon: setupIcon,
-    InnoSetupPath: innoSetupPath,
     Copyright: product.copyright,
     Privileges: product.privileges,
     InstallMode: installMode

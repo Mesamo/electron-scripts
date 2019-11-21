@@ -26,7 +26,7 @@ SetupMutex={#Name}setup
 Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
-Name: "simplifiedChinese"; MessagesFile: "{#InnoSetupPath}\i18n\Default.zh-cn.isl"
+Name: "simplifiedChinese"; MessagesFile: "compiler:Languages\SimplifiedChinese.isl"
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}\_"
