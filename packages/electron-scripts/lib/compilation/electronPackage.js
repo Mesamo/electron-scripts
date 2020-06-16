@@ -47,6 +47,7 @@ async function electronPackager() {
           customDir: electronVersion
         }
       },
+      tmpdir: resolveFromApp('./node_modules/.tmp'),
       win32metadata: {
         'requested-execution-level': requireAdmin ? 'requireAdministrator' : 'asInvoker'
       }
