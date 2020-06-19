@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Super-Linter
+      uses: github/super-linter@v2.0.0
     - name: yarn install, build
       run: |
         yarn
