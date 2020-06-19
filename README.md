@@ -1,6 +1,6 @@
 # Electron Scripts
 
-![Build status][image-1] [![NPM version][image-2]][npm] [![NPM downloads][image-3]][npm]
+![Build Status][image-1] ![Super Linter][image-4] [![NPM version][image-2]][npm] [![NPM downloads][image-3]][npm]
 
 Configuration and scripts for create electron app.
 
