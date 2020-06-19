@@ -1,0 +1,13 @@
+name: Super Linter
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: 'ubuntu-latest'
+
+    steps:
+    - name: Super-Linter
+      uses: github/super-linter@v2.0.0
+

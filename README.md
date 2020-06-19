@@ -54,3 +54,6 @@ let's build a better CLI Tools library together.
 [image-2]: https://img.shields.io/npm/v/@mesamo/electron-scripts.svg
 
 [image-3]: https://img.shields.io/npm/dm/@mesamo/electron-scripts.svg?style=flat
+
+[image-4]: https://github.com/Mesamo/electron-scripts/workflows/Super%20Linter/badge.svg
+
