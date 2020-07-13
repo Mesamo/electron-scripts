@@ -33,7 +33,7 @@
     "yargs": "^14.0.0"
   },
   "devDependencies": {
-    "electron": "^6.0.10",
+    "electron": "^7.2.4",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.2",
