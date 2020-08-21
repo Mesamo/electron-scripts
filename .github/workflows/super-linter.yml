@@ -3,7 +3,7 @@ name: Super Linter
 on: [push]
 
 jobs:
-  build:
+  linter:
 
     runs-on: 'ubuntu-latest'
 
