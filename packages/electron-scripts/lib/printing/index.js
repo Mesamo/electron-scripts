@@ -1,10 +1,9 @@
-const chalk = require('chalk');
-const figlet = require('figlet');
+const { chalk, figlet } = require('@mesamo/es-dev-utils');
 
 const getElectronVersion = require('../utils/getElectronVersion');
 const pkg = require('../../package.json');
 
-const cyan = chalk.default.cyan;
+const cyan = chalk.cyan;
 
 async function printLogo() {
   const electronVersion = await getElectronVersion();

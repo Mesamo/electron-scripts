@@ -7,6 +7,7 @@
   "scripts": {
     "start": "cd ./packages/es-template && yarn run start",
     "build": "cd ./packages/es-template && yarn run build",
+    "test": "node scripts/test.js",
     "lerna": "lerna"
   },
   "repository": {
@@ -22,8 +23,25 @@
     "url": "https://github.com/Mesamo/electron-scripts/issues"
   },
   "homepage": "https://github.com/Mesamo/electron-scripts#readme",
+  "jest": {
+    "testEnvironment": "node",
+    "setupFiles": [
+      "<rootDir>/scripts/testSetup.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.spec.js"
+    ]
+  },
   "devDependencies": {
-    "lerna": "^3.18.4",
-    "lerna-changelog": "^0.8.3"
+    "@types/jest": "^26.0.10",
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.4.2",
+    "lerna": "^3.22.1",
+    "lerna-changelog": "^1.0.1"
   }
 }

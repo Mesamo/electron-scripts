@@ -1,3 +1,3 @@
 const chalk = require('chalk');
 
-console.log(chalk.default.gray('"test" script is not implemented'));
+console.log(chalk.gray('"test" script is not implemented'));

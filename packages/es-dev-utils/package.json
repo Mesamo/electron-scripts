@@ -2,12 +2,40 @@
   "name": "@mesamo/es-dev-utils",
   "version": "0.0.3",
   "description": "Electron Scripts Utils",
+  "main": "index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mesamo/electron-scripts.git",
     "directory": "packages/es-dev-utils"
   },
-  "author": "Mesamo",
+  "bugs": {
+    "url": "https://github.com/Mesamo/electron-scripts/issues"
+  },
+  "author": "Mesamo <mesamo@foxmail.com>",
+  "homepage": "https://github.com/Mesamo/electron-scripts/tree/master/packages/create-electron-app#readme",
   "license": "MIT",
-  "private": false
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.0",
+    "@types/clui": "^0.3.0",
+    "@types/figlet": "^1.2.0",
+    "@types/inquirer": "^7.3.1"
+  }
 }

@@ -1,10 +1,10 @@
 const clui = require('clui');
 const chalk = require('chalk');
 
-const gray = chalk.default.gray;
+const gray = chalk.gray;
 const print = (msg) => {
-  console.log(` - ` + gray(msg));
-}
+  console.log(` - ${gray(msg)}`);
+};
 
 /**
  * 非CI环境使用的Spinner
@@ -46,7 +46,7 @@ class CiSpinner {
 
 const exportObj = {
   Spinner: Spinner
-}
+};
 
 if (process.env.CI === 'true') {
   exportObj.Spinner = CiSpinner;

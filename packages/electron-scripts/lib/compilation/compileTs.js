@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const chalk = require('chalk');
-const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
-const { Spinner } = require('@mesamo/es-dev-utils/spinner');
+const { TaskTimer } = require('@mesamo/es-dev-utils');
+const { Spinner } = require('@mesamo/es-dev-utils');
 const formatWebpackMessages = require('../utils/formatWebpackMessages');
 
 const spinner = new Spinner('Compile TypeScript...');

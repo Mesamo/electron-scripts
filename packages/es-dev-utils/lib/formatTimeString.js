@@ -3,7 +3,7 @@
  *
  * @param {*} ms 毫秒数
  */
-function formatTimeString(ms) {
+exports.formatTimeString = function(ms) {
   if (ms < 1000) {
     return `${ms} ms`;
   } else if (ms < 1000 * 60) {
@@ -16,6 +16,4 @@ function formatTimeString(ms) {
     const hours = ms / 1000 / 60 / 60;
     return `${hours.toFixed(2)} hour`;
   }
-}
-
-module.exports = formatTimeString;
+};

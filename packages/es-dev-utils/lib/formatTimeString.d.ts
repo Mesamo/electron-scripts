@@ -3,4 +3,4 @@
  *
  * @param ms 毫秒数
  */
-export default function formatTimeString(ms: number): string;
+export function formatTimeString(ms: number): string;

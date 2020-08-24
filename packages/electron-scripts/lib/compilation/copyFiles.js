@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const path = require('path');
-const { TaskTimer } = require('@mesamo/es-dev-utils/task-timer');
-const { Spinner } = require('@mesamo/es-dev-utils/spinner');
+const { TaskTimer } = require('@mesamo/es-dev-utils');
+const { Spinner } = require('@mesamo/es-dev-utils');
 
 const paths = require('../paths');
 const resolveFromApp = require('../utils/resolveFromApp');
