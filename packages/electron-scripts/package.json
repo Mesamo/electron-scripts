@@ -27,7 +27,7 @@
     "webpack-stats-plugin": "^0.3.0"
   },
   "devDependencies": {
-    "electron": "^6.0.10"
+    "electron": "^7.2.4"
   },
   "gitHead": "4ea1c9a122e223c3d0f23de89da26e73750933de"
 }
