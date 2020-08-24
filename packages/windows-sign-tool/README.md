@@ -1,0 +1,1 @@
+# @mesamo/windows-sign-tool

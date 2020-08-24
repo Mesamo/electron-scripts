@@ -1,0 +1,1 @@
+# @mesamo/inno-setup-compiler
