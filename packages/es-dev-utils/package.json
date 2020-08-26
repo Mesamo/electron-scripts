@@ -29,13 +29,20 @@
     "chalk": "^4.1.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
+    "commander": "^6.0.0",
+    "cross-spawn": "^7.0.3",
     "figlet": "^1.5.0",
-    "inquirer": "^7.3.3"
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "semver": "^7.3.2"
   },
   "devDependencies": {
     "@types/clear": "^0.1.0",
     "@types/clui": "^0.3.0",
+    "@types/cross-spawn": "^6.0.2",
     "@types/figlet": "^1.2.0",
-    "@types/inquirer": "^7.3.1"
+    "@types/fs-extra": "^9.0.1",
+    "@types/inquirer": "^7.3.1",
+    "@types/semver": "^7.3.3"
   }
 }

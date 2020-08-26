@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+const { chalk } = require('@mesamo/es-dev-utils');
 
 const copyFiles = require('../lib/compilation/copyFiles');
 const compileTs = require('../lib/compilation/compileTs');

@@ -1,0 +1,39 @@
+{
+  "name": "@mesamo/create-electron-app",
+  "version": "0.0.1",
+  "description": "Create Electron App",
+  "keywords": [
+    "electron"
+  ],
+  "author": "Mesamo <mesamo@foxmail.com>",
+  "homepage": "https://github.com/Mesamo/electron-scripts/tree/master/packages/create-electron-app#readme",
+  "license": "MIT",
+  "main": "lib/create-electron-app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mesamo/electron-scripts.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Mesamo/electron-scripts/issues"
+  },
+  "bin": {
+    "create-electron-app": "bin/index.js"
+  },
+  "dependencies": {
+    "@mesamo/es-dev-utils": "^0.0.3",
+    "got": "^11.5.2",
+    "tar": "^6.0.5",
+    "tar-pack": "^3.4.1",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}

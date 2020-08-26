@@ -1,4 +1,4 @@
-const fs = require('fs-extra');
+const { fs } = require('@mesamo/es-dev-utils');
 const path = require('path');
 
 function resolveFromApp(relativePath) {

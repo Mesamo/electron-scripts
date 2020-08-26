@@ -1,7 +1,5 @@
 const webpack = require('webpack');
-const chalk = require('chalk');
-const { TaskTimer } = require('@mesamo/es-dev-utils');
-const { Spinner } = require('@mesamo/es-dev-utils');
+const { TaskTimer, Spinner, chalk } = require('@mesamo/es-dev-utils');
 const formatWebpackMessages = require('../utils/formatWebpackMessages');
 
 const spinner = new Spinner('Compile TypeScript...');
@@ -16,7 +14,7 @@ async function compileTs(mode = 'development') {
     taskTimer.finish();
     // 打印编译警告
     if (result.warnings.length) {
-      console.log(chalk.yellow(`\nCompiled TypeScript with warnings.\n`));
+      console.log(chalk.yellow('\nCompiled TypeScript with warnings.\n'));
       console.log(result.warnings.join('\n\n'));
     }
   } catch (error) {

@@ -1,7 +1,5 @@
 const path = require('path');
-const fs = require('fs-extra');
-const { TaskTimer } = require('@mesamo/es-dev-utils');
-const { Spinner } = require('@mesamo/es-dev-utils');
+const { TaskTimer, Spinner, fs } = require('@mesamo/es-dev-utils');
 const innoSetupCompiler = require('@mesamo/inno-setup-compiler');
 const signTool = require('@mesamo/windows-sign-tool');
 

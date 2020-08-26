@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+const { chalk } = require('@mesamo/es-dev-utils');
 
 const printLogo = require('../lib/printing/index');
 
