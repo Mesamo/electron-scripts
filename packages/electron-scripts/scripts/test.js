@@ -1,3 +1,9 @@
-const { chalk } = require('@mesamo/es-dev-utils');
+// const { chalk } = require('@mesamo/es-dev-utils');
 
-console.log(chalk.gray('"test" script is not implemented'));
+const unitTest = require('../lib/compilation/unitTest');
+
+function test() {
+  unitTest();
+}
+
+module.exports = test;

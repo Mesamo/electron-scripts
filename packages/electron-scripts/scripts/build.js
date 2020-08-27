@@ -5,8 +5,6 @@ const compileTs = require('../lib/compilation/compileTs');
 const electronPackage = require('../lib/compilation/electronPackage');
 const installation = require('../lib/compilation/winInstaller');
 
-build();
-
 async function build() {
   try {
     await copyFiles();
@@ -18,3 +16,5 @@ async function build() {
     process.exit(1);
   }
 }
+
+module.exports = build;

@@ -5,9 +5,7 @@ const { commander, chalk, checkNodeVersion } = require('@mesamo/es-dev-utils');
 const enhanceErrorMessages = require('../lib/utils/enhanceErrorMessages');
 const packageJson = require('../package.json');
 
-const majorVersion = 10;
-
-checkNodeVersion(majorVersion, packageJson.name);
+checkNodeVersion(packageJson.engines.node, packageJson.name);
 
 let appName;
 

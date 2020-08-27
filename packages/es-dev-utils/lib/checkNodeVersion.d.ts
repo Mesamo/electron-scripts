@@ -1,1 +1,1 @@
-export function checkNodeVersion(minMajorVersion: number, id: string): void;
+export function checkNodeVersion(wanted: string, id: string): void;

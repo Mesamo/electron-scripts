@@ -3,8 +3,6 @@ const { chalk } = require('@mesamo/es-dev-utils');
 const copyFiles = require('../lib/compilation/copyFiles');
 const compileTs = require('../lib/compilation/compileTs');
 
-start();
-
 async function start() {
   try {
     await copyFiles();
@@ -14,3 +12,5 @@ async function start() {
     process.exit(1);
   }
 }
+
+module.exports = start;

@@ -1,34 +1,33 @@
 #!/usr/bin/env node
 
-process.on('unhandledRejection', error => {
-  throw error;
-});
+const { commander, checkNodeVersion } = require('@mesamo/es-dev-utils');
 
-const spawn = require('cross-spawn');
-const args = process.argv.splice(2);
+const packageJson = require('../package.json');
 
-const scriptIndex = args.findIndex(
-  x => x === 'build' || x === 'start' || x === 'test' || x === 'version'
-);
+checkNodeVersion(packageJson.engines.node, packageJson.name);
 
-const script = scriptIndex === -1 ? args[0] : args[scriptIndex];
-const nodeArgs = scriptIndex > 0 ? args.splice(0, scriptIndex) : [];
+const program = new commander.Command('electron-scrips')
+  .version(packageJson.version)
+  .usage('<command> [options]');
 
-switch (script) {
-  case 'build':
-  case 'start':
-  case 'test':
-  case 'version': {
-    const result = spawn.sync(
-      'node',
-      nodeArgs
-        .concat(require.resolve('../scripts/' + script))
-        .concat(args.slice(scriptIndex + 1)),
-      { stdio: 'inherit' }
-    );
-    process.exit(result.status);
-  }
-  default:
-    console.log(`Unknown script "${script}".`);
-    break;
-}
+program
+  .command('build')
+  .description('build electron app in production mode')
+  .action(() => require('../scripts/build')());
+
+program
+  .command('start')
+  .description('build electron app in development mode')
+  .action(() => require('../scripts/start')());
+
+program
+  .command('test')
+  .description('Run unit tests')
+  .action(() => require('../scripts/test')());
+
+program
+  .command('version')
+  .description('show versions')
+  .action(() => require('../scripts/version')());
+
+program.parse(process.argv);

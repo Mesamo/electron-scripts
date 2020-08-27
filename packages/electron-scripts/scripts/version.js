@@ -2,8 +2,6 @@ const { chalk } = require('@mesamo/es-dev-utils');
 
 const printLogo = require('../lib/printing/index');
 
-version();
-
 async function version() {
   try {
     await printLogo();
@@ -12,3 +10,5 @@ async function version() {
     process.exit(1);
   }
 }
+
+module.exports = version;

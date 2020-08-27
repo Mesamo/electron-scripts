@@ -3,6 +3,9 @@
   "version": "0.1.9",
   "description": "Configuration and scripts for create electron app.",
   "bin": "./bin/electron-scripts.js",
+  "keywords": [
+    "electron"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mesamo/electron-scripts.git",
@@ -10,13 +13,22 @@
   },
   "author": "Mesamo",
   "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
   "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
     "@mesamo/es-dev-utils": "^0.0.3",
     "@mesamo/inno-setup-compiler": "^0.0.3",
     "@mesamo/windows-sign-tool": "^0.0.2",
+    "@types/jest": "^26.0.10",
+    "babel-jest": "^26.3.0",
     "cross-spawn": "^7.0.0",
     "electron-packager": "^14.0.6",
     "fs-extra": "^8.1.0",
+    "jest": "^26.4.2",
     "resolve": "^1.12.0",
     "ts-loader": "^6.2.0",
     "tslint": "^5.20.0",

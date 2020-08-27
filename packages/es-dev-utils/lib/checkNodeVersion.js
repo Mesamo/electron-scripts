@@ -1,8 +1,7 @@
 const semver = require('semver');
 const chalk = require('chalk');
 
-exports.checkNodeVersion = function(minMajorVersion, id) {
-  const wanted = `>=${minMajorVersion}`;
+exports.checkNodeVersion = function(wanted, id) {
   const unsupportedNodeVersion = !semver.satisfies(process.version, wanted);
   if (unsupportedNodeVersion) {
     console.log(chalk.red(
