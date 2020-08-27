@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@mesamo/electron-scripts": "^0.1.9",
+    "@types/jest": "^26.0.10",
     "@types/node": "^10.12.18",
     "electron": "^7.2.4",
     "tslint": "^5.20.0",
