@@ -16,6 +16,16 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Debug Create Electron App",
+      "program": "${workspaceFolder}/packages/create-electron-app/bin/index.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "args": ["test"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Electron",
       "preLaunchTask": "start",
       "runtimeExecutable": "${workspaceFolder}/packages/es-template/node_modules/.bin/electron.cmd",
