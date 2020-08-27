@@ -1,6 +1,6 @@
 {
   "name": "@mesamo/create-electron-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create Electron App",
   "bin": {
     "create-electron-app": "bin/index.js"
@@ -19,7 +19,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@mesamo/es-dev-utils": "^0.0.3",
+    "@mesamo/es-dev-utils": "^0.0.4",
     "got": "^11.5.2",
     "tar": "^6.0.5",
     "tar-pack": "^3.4.1",

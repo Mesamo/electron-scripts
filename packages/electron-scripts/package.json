@@ -1,6 +1,6 @@
 {
   "name": "@mesamo/electron-scripts",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Configuration and scripts for create electron app.",
   "bin": "./bin/electron-scripts.js",
   "keywords": [
@@ -20,9 +20,9 @@
     "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-typescript": "^7.10.4",
-    "@mesamo/es-dev-utils": "^0.0.3",
-    "@mesamo/inno-setup-compiler": "^0.0.3",
-    "@mesamo/windows-sign-tool": "^0.0.2",
+    "@mesamo/es-dev-utils": "^0.0.4",
+    "@mesamo/inno-setup-compiler": "^0.1.0",
+    "@mesamo/windows-sign-tool": "^0.1.0",
     "@types/jest": "^26.0.10",
     "babel-jest": "^26.3.0",
     "cross-spawn": "^7.0.0",
