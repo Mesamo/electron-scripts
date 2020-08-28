@@ -17,29 +17,22 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-typescript": "^7.10.4",
     "@mesamo/es-dev-utils": "^0.0.4",
     "@mesamo/inno-setup-compiler": "^0.1.0",
     "@mesamo/windows-sign-tool": "^0.1.0",
     "@types/jest": "^26.0.10",
-    "babel-jest": "^26.3.0",
-    "cross-spawn": "^7.0.0",
-    "electron-packager": "^14.0.6",
-    "fs-extra": "^8.1.0",
+    "electron-packager": "^15.1.0",
     "jest": "^26.4.2",
-    "resolve": "^1.12.0",
-    "ts-loader": "^6.2.0",
-    "tslint": "^5.20.0",
+    "resolve": "^1.17.0",
+    "ts-jest": "^26.3.0",
+    "ts-loader": "^8.0.3",
+    "tslint": "^6.1.3",
     "tslint-loader": "^3.5.4",
-    "typescript": "^3.6.3",
-    "webpack": "^4.41.0",
-    "webpack-bundle-analyzer": "^3.6.0",
-    "webpack-stats-plugin": "^0.3.0"
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-stats-plugin": "^0.3.2"
   },
-  "devDependencies": {
-    "electron": "^7.2.4"
-  },
+  "devDependencies": {},
   "gitHead": "4ea1c9a122e223c3d0f23de89da26e73750933de"
 }

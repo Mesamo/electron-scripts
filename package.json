@@ -24,12 +24,14 @@
   },
   "homepage": "https://github.com/Mesamo/electron-scripts#readme",
   "jest": {
+    "preset": "ts-jest",
     "testEnvironment": "node",
     "setupFiles": [
       "<rootDir>/scripts/testSetup.js"
     ],
     "testMatch": [
-      "**/__tests__/**/*.spec.js"
+      "**/__tests__/**/*.spec.js",
+      "**/__tests__/**/*.spec.ts"
     ]
   },
   "devDependencies": {
