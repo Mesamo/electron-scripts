@@ -51,7 +51,6 @@ async function electronPackager() {
       }
     });
 
-    spinner.message(`Signing Executable ${appName}.exe`);
     const exePath = path.resolve(result[0], `${appName}.exe`);
     const options = {
       pfxFile: configs.compilation.pfxFile,
@@ -59,6 +58,7 @@ async function electronPackager() {
       file: exePath
     };
     if (options.pfxFile && options.pfxPwd) {
+      spinner.message(`Signing Executable ${appName}.exe`);
       await signTool(options);
     }
     spinner.stop();

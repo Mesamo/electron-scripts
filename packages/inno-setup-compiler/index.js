@@ -7,11 +7,11 @@ function packageInnoSetup(iss, options, cb) {
   const definitions = options.definitions || {};
 
   if (process.argv.some(arg => arg === '--debug-inno')) {
-    definitions['Debug'] = 'true';
+    definitions.Debug = 'true';
   }
 
   if (process.argv.some(arg => arg === '--sign')) {
-    definitions['Sign'] = 'true';
+    definitions.Sign = 'true';
   }
 
   const keys = Object.keys(definitions);
