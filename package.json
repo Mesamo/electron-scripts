@@ -5,8 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "cd ./packages/es-template && yarn run start",
-    "build": "cd ./packages/es-template && yarn run build",
+    "start": "yarn workspace @mesamo/es-template start",
+    "build": "yarn workspace @mesamo/es-template build",
     "test": "node scripts/test.js",
     "lerna": "lerna"
   },
