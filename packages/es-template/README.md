@@ -1,2 +1,3 @@
-# electron-scripts
-Configuration and scripts for create electron app.
+# @mesamo/es-template
+
+Electron template project.

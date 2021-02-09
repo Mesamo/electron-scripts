@@ -1,6 +1,6 @@
 # Electron Scripts
 
-![Build Status][image-1] ![Super Linter][image-4] [![NPM version][image-2]][npm] [![NPM downloads][image-3]][npm]
+![Build Status][win-build] ![Super Linter][super-lint] [![NPM version][npm-version]][npm] [![NPM downloads][npm-download]][npm]
 
 Configuration and scripts for create electron app.
 
@@ -12,6 +12,8 @@ Configuration and scripts for create electron app.
 
 * Quickly create an Electron app
 * The Main process supports Typescript
+* Multi platform
+* Use Inno Setup to package Windows Installer
 
 ## 📦 Install
 
@@ -21,16 +23,42 @@ npm i @mesamo/electron-scripts -D
 
 ## 🔨 Usage
 
-Runs the project in development mode.
+### Create the project
+
+npx
+
+```bash
+npx @mesamo/create-electron-app my-electron-app
+```
+
+npm
+
+```bash
+npm init @mesamo/electron-app my-electron-app
+```
+
+yarn
+
+```bash
+yarn create @mesamo/electron-app my-electron-app
+```
+
+### Runs the project in development mode
 
 ```bash
 electron-scripts start
 ```
 
-Builds the app for production to the build folder.
+### Builds the app for production to the build folder
 
 ```bash
 electron-scripts build
+```
+
+### Run unit tests
+
+```bash
+electron-scripts test
 ```
 
 ## 🤝 Contributing
@@ -44,10 +72,10 @@ let's build a better CLI Tools library together.
 
 [npm]: https://www.npmjs.com/package/@mesamo/electron-scripts
 
-[image-1]: https://github.com/Mesamo/electron-scripts/workflows/Windows%20Build/badge.svg
+[win-build]: https://github.com/Mesamo/electron-scripts/workflows/Windows%20Build/badge.svg
 
-[image-2]: https://img.shields.io/npm/v/@mesamo/electron-scripts.svg
+[npm-version]: https://img.shields.io/npm/v/@mesamo/electron-scripts.svg
 
-[image-3]: https://img.shields.io/npm/dm/@mesamo/electron-scripts.svg?style=flat
+[npm-download]: https://img.shields.io/npm/dm/@mesamo/electron-scripts.svg?style=flat
 
-[image-4]: https://github.com/Mesamo/electron-scripts/workflows/Super%20Linter/badge.svg
+[super-lint]: https://github.com/Mesamo/electron-scripts/workflows/Super%20Linter/badge.svg

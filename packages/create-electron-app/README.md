@@ -1,11 +1,3 @@
-# `create-electron-app`
+# @mesamo/create-electron-app
 
-> TODO: description
-
-## Usage
-
-```js
-const createElectronApp = require('create-electron-app');
-
-// TODO: DEMONSTRATE API
-```
+Set up an Electron Project by running one command.
