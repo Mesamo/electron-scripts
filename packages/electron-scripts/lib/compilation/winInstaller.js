@@ -26,7 +26,7 @@ const buildInstallMode = (arch) => {
   }
 };
 
-async function installation() {
+async function winInstaller() {
   const configPath = path.resolve(__dirname, '../configs/inno-scripts.iss');
 
   const sourcePath = buildPath(product.arch);
@@ -90,4 +90,4 @@ async function runInnoSetup(configPath, options) {
   });
 }
 
-module.exports = installation;
+module.exports = winInstaller;

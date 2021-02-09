@@ -79,6 +79,9 @@ class ProductOptions {
     overwrite(configs.dirName, (value) => {
       this.dirName = value;
     });
+    overwrite(configs.platform, (value) => {
+      this.platform = value;
+    });
     overwrite(configs.arch, (value) => {
       this.arch = value;
     });

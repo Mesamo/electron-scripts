@@ -57,7 +57,7 @@ async function electronPackager() {
       pfxPwd: configs.compilation.pfxPwd,
       file: exePath
     };
-    if (options.pfxFile && options.pfxPwd) {
+    if (options.pfxFile && options.pfxPwd && product.platform === 'win32') {
       spinner.message(`Signing Executable ${appName}.exe`);
       await signTool(options);
     }

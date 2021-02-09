@@ -104,6 +104,10 @@
           "type": "string",
           "description": "版权"
         },
+        "platform": {
+          "$ref": "#/definitions/platformPattern",
+          "description": "平台"
+        },
         "arch": {
           "$ref": "#/definitions/archPattern",
           "description": "架构"
@@ -182,6 +186,10 @@
           "required": ["input", "output"]
         }
       ]
+    },
+    "platformPattern": {
+      "type": "string",
+      "enum": ["win32", "linux"]
     },
     "archPattern": {
       "type": "string",
